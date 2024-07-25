@@ -16,12 +16,8 @@ itch.io遊戲試玩連結 :
     ``` 
 ## IColletable.cs
   ### Overview
-  `DestructibleBase` is an abstract base class designed to implement core functionality for destructible objects in Cave Hero.   
-  This class leverages the features of abstract classes to provide a universal framework for destructible objects.
-  ### Feature
-  - **Code Reusability** : `DestructibleBase` defines common properties and methods for destructible objects. Subclasses can directly inherit these common features, reducing code duplication.
-  - **Improved Code Maintainability** : Centralizing common functionality makes modifications and extensions easier to manage.
-  - **Polymorphism Promotion** : Allows handling different types of destructible objects through base class references.
-  - **Increase Flexibility** :
-    - The `GetHitOneTime()` method provides a common logic that defines the destruction process for all destructible objects.
-    - The abstract methods `OnHit()` and `OnDestruction()` allow for customized behavior for each specific type of destructible object.
+  `ICollectable` is an interface designed to standardize the behavior of collectible items in Skater Runner.   
+  It defines a common set of methods that all collectible objects should implement, ensuring consistency across different types of collectibles.
+  ### Method
+  - **OnPickUp()** : This method should be implemented to define the behavior when the collectible item is picked up by the player.
+  
